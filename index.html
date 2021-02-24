@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taskinator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="page-title"> Taskinator</h1>
+        <p> Click the button below to add a new task!</p> 
+        <form id="task-form">
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name" />
+            </div>
+            <div class="form-group">
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick A Task Type</option>
+                    <option value="Home">At home</option>
+                    <option value="Outside">Outside</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="save-task" class="btn">Add Task</button>
+            </div>
+        </form>
+    </header>
+    <main class="page-content" id="page-content">
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks to do</h2>
+            <ul id="task-to-do" class="task-list">
+            </ul>
+        </section>
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks in Progress</h2>
+            <ul id="tasks-in-progress" class="task-list">
+            </ul>
+        </section>
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Task Completed</h2>
+            <ul id="tasks-completed" class="task-list"></ul>
+        </section>
+    </main>
+    <footer>
+        &copy;2020 by Taskinator
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
